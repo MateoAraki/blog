@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page Mateo Araki</title>
+    <link rel = "icon" href = "images/logo.png" type = "image/jpeg">
+    <audio id='bgMusic' src='assets/bg.mp3' loop></audio>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/page.css">
+</head>
+    <section class="hero-container">
+        <div>
+            <div>
+                <h1>Hi! Welcome
+                </h1>
+                <p>why learn how to blog?</p>
+            </div>
+        </div>
+        <img src="assets/hero.svg" alt="hero">
+    </section>
+    <section class="button-container">
+       <a href="post.html"> <button class="btn" target="_blank"
+                            onclick='music()'>See More Now</button></a>
+    </section>
+    <footer> 
+        <p><b>Mateo Araki</b> 2020 copyright all rights reserved</p>
+        <div>
+            <img src="assets/instagram.svg" alt="instagram">
+            <img src="assets/twitter.svg" alt="twitter">
+            <img src="assets/linkedin.svg" alt="linkedin">
+        </div>
+    </footer>
+<script>
+var audioPlaying = false;
+        function music(){
+        var audio = document.getElementById("bgMusic");
+        if (!audioPlaying) audio.play();
+        else audio.pause();
+        audioPlaying = !audioPlaying;
+        }
+    </script>
+</body>
+</html>
